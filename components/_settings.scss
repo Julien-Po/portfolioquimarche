@@ -1,0 +1,23 @@
+$whiteTitle : #F1EFEF;
+$titleFont : 'Noto Serif Display';
+$textFont : 'Montserrat';
+$primaryPorfolio : #FFCE00;
+$secondaryPortfolio : #FE4880;
+
+* {
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #363535;
+    overflow-x: hidden;
+}
+
+h2 {
+    color: $whiteTitle;
+    font-family: $titleFont, sans-serif;
+    font-weight: lighter;
+    text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+}

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+h1 {
+    margin: 20px 0 30px;
+}
+button {
+    background: rgb(243,49,49);
+    border: none;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#appDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20 auto;
+    width: 90%;
+}
+.card {
+    flex: 1 0 20%;
+    min-width: 200px;
+    max-width: 450px;
+    margin: 10px;
+    padding: 20px 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0,0, 0.267);
+    position: relative;
+    min-height: 260px;
+    display: grid;
+}
+img {
+    border-radius: 150px;
+    margin: 4px auto 0;
+    box-shadow: 0 1px 6px rgba(0, 0,0, 0.267);
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+p,
+em {
+    font-size: 0.9rem;
+}

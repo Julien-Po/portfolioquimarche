@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    title {
+        font: 400 1em/1.5 "Neuton";
+        color: rgba(255, 255, 255, .25);
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        display: block;
+        border: 4px double rgba(241, 241, 241, .25);
+        border-width: 4px 0;
+        padding: 1.5em 0em;
+        width: 40em;
+        font-family: 'Sansita Swashed', cursive;
+        color: white;
+        text-align: center;
+
+        span {
+
+            font: 700 4em/1 "Oswald", sans-serif;
+            letter-spacing: 0;
+            padding: .25em 0 .325em;
+            display: block;
+            margin: 0 auto;
+            text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+            text-align: center;
+
+            /* Clip Background Image */
+
+            background: url(https://imgs.search.brave.com/lumhqSzShaXSt0-SQsMQdWOerUqxHFAGACzymve_mcw/rs:fit:1200:1200:1/g:ce/aHR0cDovL3d3dy5o/ZHdhbGxwYXBlcnNs/aWZlLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOC8wMy9i/bHVlX3NwaXJhbHMt/d2lkZS5qcGc) repeat-y;
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            /* Animate Background Image */
+
+            -webkit-text-fill-color: transparent;
+            animation: aitf 80s linear infinite;
+
+            /* Activate hardware acceleration for smoother animations */
+
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+
+        }
+    }
+
+    /* Animate Background Image */
+
+    @keyframes aitf {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+}

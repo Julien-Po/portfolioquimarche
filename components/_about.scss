@@ -1,0 +1,17 @@
+.about {
+    .aboutMe {
+        width: 40%;
+        margin-left: 5%;
+        margin-top: 100px;
+
+        p {
+            color: white;
+            border-bottom: 4px double rgba(241, 241, 241, .25);
+            border-width: 4px 0;
+            padding-bottom: 30px;
+            font-family: $textFont;
+            font-size: 0.9rem;
+        }
+    }
+
+}

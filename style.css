@@ -1,0 +1,438 @@
+* {
+  padding: 0;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #363535;
+  overflow-x: hidden;
+}
+
+h2 {
+  color: #F1EFEF;
+  font-family: "Noto Serif Display", sans-serif;
+  font-weight: lighter;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Animate Background Image */
+}
+
+header title {
+  font: 400 1em/1.5 "Neuton";
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header p {
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: block;
+  border: 4px double rgba(241, 241, 241, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  width: 40em;
+  font-family: 'Sansita Swashed', cursive;
+  color: white;
+  text-align: center;
+}
+
+header p span {
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  /* Clip Background Image */
+  background: url(https://imgs.search.brave.com/lumhqSzShaXSt0-SQsMQdWOerUqxHFAGACzymve_mcw/rs:fit:1200:1200:1/g:ce/aHR0cDovL3d3dy5o/ZHdhbGxwYXBlcnNs/aWZlLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOC8wMy9i/bHVlX3NwaXJhbHMt/d2lkZS5qcGc) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+          animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.about .aboutMe {
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 100px;
+}
+
+.about .aboutMe p {
+  color: white;
+  border-bottom: 4px double rgba(241, 241, 241, 0.25);
+  border-width: 4px 0;
+  padding-bottom: 30px;
+  font-family: "Montserrat";
+  font-size: 0.9rem;
+}
+
+.skillsContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.skillsContainer .skills {
+  border-bottom: 4px double rgba(241, 241, 241, 0.25);
+  border-width: 4px 0;
+  padding-bottom: 30px;
+}
+
+.skillsContainer .skills .listColor {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 0.9rem;
+}
+
+.abilities .abilityGrid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 650px) {
+  .abilities .abilityGrid {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.abilities .abilityGrid h3 {
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .abilities .abilityGrid h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .abilities .abilityGrid .abilityContainer {
+    padding-top: 30px;
+  }
+}
+
+.abilities .abilityGrid .progress {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.abilities .abilityGrid .progress .circle {
+  height: 160px;
+  width: 160px;
+  border-radius: 500px;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 18px;
+}
+
+.abilities .abilityGrid .progress .circle .inCircle {
+  height: 120px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 500px;
+  -webkit-box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -2px -2px 7px rgba(255, 255, 255, 0.7), 0.5px 0.5px 0px rgba(255, 255, 255, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -2px -2px 7px rgba(255, 255, 255, 0.7), 0.5px 0.5px 0px rgba(255, 255, 255, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.abilities .abilityGrid .progress .circle .inCircle .circleNumber {
+  color: white;
+  font-weight: 600px;
+}
+
+.abilities .abilityGrid .progress .circle .inCircle .Number {
+  color: white;
+  font-weight: 600px;
+}
+
+.abilities .abilityGrid .progress .circle .inCircle .lstNumber {
+  color: white;
+  font-weight: 600px;
+}
+
+.abilities .abilityGrid svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.abilities circle {
+  fill: none;
+  width: 160px;
+  height: 160px;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: circleanim 1.3s linear forwards;
+          animation: circleanim 1.3s linear forwards;
+}
+
+@-webkit-keyframes circleanim {
+  100% {
+    stroke-dashoffset: 283;
+  }
+}
+
+@keyframes circleanim {
+  100% {
+    stroke-dashoffset: 283;
+  }
+}
+
+.portfolioContainer .cardFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  gap: 150px;
+}
+
+@media screen and (max-width: 950px) {
+  .portfolioContainer .cardFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.portfolioContainer img {
+  height: 150px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .portfolioContainer img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .portfolioContainer img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portfolioContainer img {
+    height: 150px;
+  }
+}
+
+.portfolioContainer h3 {
+  color: white;
+  text-align: center;
+}
+
+.portfolioContainer .mountainCard {
+  width: 20%;
+}
+
+@media screen and (max-width: 950px) {
+  .portfolioContainer .mountainCard {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.portfolioContainer .mountainCard .mountainGrid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.meetCard {
+  width: 20%;
+}
+
+@media screen and (max-width: 950px) {
+  .meetCard {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.meetCard .meetGrid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.meetCard h3 {
+  color: white;
+  text-align: center;
+}
+
+.meetCard img {
+  height: 150px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 950px) {
+  .meetCard img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .meetCard img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .meetCard img {
+    height: 150px;
+  }
+}
+
+.appCard {
+  width: 20%;
+}
+
+@media screen and (max-width: 950px) {
+  .appCard {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.appCard .appGrid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.appCard h3 {
+  color: white;
+  text-align: center;
+}
+
+.appCard img {
+  height: 150px;
+  border-radius: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 950px) {
+  .appCard img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .appCard img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .appCard img {
+    height: 150px;
+  }
+}
+
+.linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+header {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(20px);
+
+    @media screen and (min-width :850px) {
+            height:100vh;
+    }
+        
+   
+
+    h1 {
+        text-transform: uppercase;
+        font-family: 'Merriweather';
+        font-size: 1.9rem;
+        padding-top: 200px;
+        padding-bottom: 20px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(20px);
+       
+    }
+    p {
+        font-family: 'Merriweather';
+        font-style: italic;
+        padding-bottom: 40px;
+
+    }
+
+    img {
+        border-radius: 500px;
+        border: 1px solid white;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .fleche {
+        display: none;
+        @media screen and ( min-width: 850px ) {
+            display: contents;
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
